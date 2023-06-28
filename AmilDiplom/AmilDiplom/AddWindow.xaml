@@ -1,0 +1,30 @@
+﻿<Window x:Class="AmilDiplom.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AmilDiplom"
+        mc:Ignorable="d"
+        Title="Счастливый друг" Height="450" Width="450" Icon="/logo.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid x:Name="AddNewsGrid" Background="#FF517679" Visibility="Hidden">
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua" Content="Название"></Label>
+            <TextBox x:Name="TitleText" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,75,0,0" Width="200" Height="30" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua"></TextBox>
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,120,0,0" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua" Content="Основной текст"></Label>
+            <TextBox x:Name="MainText" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,165,0,0" Width="200" Height="50" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua"></TextBox>
+            <Button x:Name="AddPhotoButton" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FF679497" Margin="0,230,0,0" FontWeight="Normal" FontSize="14" FontFamily="Book Antiqua" Content="Прикрепить фото.." Width="200" Click="AddPhotoButton_Click"></Button>
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,265,0,0" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua" Content="От администратора"></Label>
+            <TextBox x:Name="FromAdText" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,305,0,0" Width="200" Height="30" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua"></TextBox>
+            <Button x:Name="AddNewsButton" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,365,0,0" Width="200" Height="30" Background="#FF679497" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua" Content="Добавить" Click="AddNewsButton_Click"></Button>
+            <Image x:Name="ExImage" Visibility="Hidden"></Image>
+        </Grid>
+        <Grid x:Name="AddAnimalGrid" Background="#FF517679" Visibility="Visible">
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua" Content="Имя животного"></Label>
+            <TextBox x:Name="NameText" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,75,0,0" Width="200" Height="30" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua"></TextBox>
+            <TextBox x:Name="HistoryText" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,165,0,0" Width="200" Height="100" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua"></TextBox>
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,120,0,0" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua" Content="История"></Label>
+            <Button x:Name="AddPhotoAnimalButton" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FF679497" Margin="0,280,0,0" FontWeight="Normal" FontSize="14" FontFamily="Book Antiqua" Content="Прикрепить фото.." Width="200" Click="AddPhotoAnimalButton_Click"></Button>
+            <Button x:Name="AddAnimalButton" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,365,0,0" Width="200" Height="30" Background="#FF679497" FontWeight="Bold" FontSize="20" FontFamily="Book Antiqua" Content="Добавить" Click="AddAnimalButton_Click"></Button>
+        </Grid>
+    </Grid>
+</Window>
